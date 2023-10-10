@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FOOD ORDER FORM</title>
+    <link rel="stylesheet" type="text/css" href="mymenu.css">
+    <script type="text/javascript" src="javascript.js"></script>
+</head>
+<body>
+    <div>
+        <h2>           Menu Card           </h2>
+        <table width="40%" id="alignment">
+            <tr>
+                <th>The Food Items</th>
+                <th></th>
+            </tr>
+            <tr>
+                <td>Chicken pizza</td>
+                <td>-299/-</td>
+            </tr>
+            <tr>
+                <td>Vegetable Pizza</td>
+                <td>-180/-</td>
+            </tr>
+            <tr>
+                <td>Chicken Burger</td>
+                <td>-220/-</td>
+            </tr>
+            <tr>
+                <td>Veg Burger </td>
+                <td>-150/-</td>
+            </tr>
+            <tr>
+                <td>Water Bottle</td>
+                <td>-20/-</td>
+            </tr>
+        </table>
+        <h2>Eat Fit - You Can Order Here</h2>
+        <table style="background-color: aquamarine; margin-left: 100px;">
+            <tr>
+                <td>Table Number:</td>
+                <td>
+                    <select>
+                        <option>--Select Table--</option>
+                        <option>One</option>
+                        <option>Two</option>
+                        <option>Three</option>
+                        <option>Four</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Customer Name:</td>
+                <td>
+                    <input type="text">
+                </td>
+            </tr>
+            <tr>
+                <td>Mobile:</td>
+                <td>
+                    <input type="text" id="mblenmb" onblur="checkmob()">
+                </td>
+            </tr>
+        </table>
+        <br>
+        <form name="tblform">
+            <table width="80%" id="alignment">
+                <tr>
+                    <th>Food Item</th>
+                    <th></th>
+                    <th>Quantity</th>
+                </tr>
+                <tr>
+                    <td>Item 1:</td>
+                    <td>
+                        <select id="item1">
+                            <option value="0">--Select Item--</option>
+                            <option value="Chicken pizza">Chicken pizza</option>
+                            <option value="Vegetable Pizza">Vegetable Pizza</option>
+                            <option value="Chicken Burger">Chicken Burger</option>
+                            <option value="Veg Burger">Veg Burger</option>
+                            <option value="Water Bottle">Water Bottle</option>
+                        </select>
+                    </td>
+                    <td><input type="number" value="0" id="q1"></td>
+                </tr>
+                <tr>
+                    <td>Item 2:</td>
+                    <td>
+                        <select id="item2">
+                            <option value="0">--Select Item--</option>
+                            <option value="Chicken pizza">Chicken pizza</option>
+                            <option value="Vegetable Pizza">Vegetable Pizza</option>
+                            <option value="Chicken Burger">Chicken Burger</option>
+                            <option value="Veg Burger">Veg Burger</option>
+                            <option value="Water Bottle">Water Bottle</option>
+                        </select>
+                    </td>
+                    <td><input type="number" value="0" id="q2"></td>
+                </tr>
+                <tr>
+                    <td>Item 3:</td>
+                    <td>
+                        <select id="item3">
+                            <option value="0">--Select Item--</option>
+                            <option value="Chicken pizza">Chicken pizza</option>
+                            <option value="Vegetable Pizza">Vegetable Pizza</option>
+                            <option value="Chicken Burger">Chicken Burger</option>
+                            <option value="Veg Burger">Veg Burger</option>
+                            <option value="Water Bottle">Water Bottle</option>
+                        </select>
+                    </td>
+                    <td><input type="number" value="0" id="q3"></td>
+                </tr>
+                <tr>
+                    <td>Item 4:</td>
+                    <td>
+                        <select id="item4">
+                            <option value="0">--Select Item--</option>
+                            <option value="Chicken pizza">Chicken pizza</option>
+                            <option value="Vegetable Pizza">Vegetable Pizza</option>
+                            <option value="Chicken Burger">Chicken Burger</option>
+                            <option value="Veg Burger">Veg Burger</option>
+                            <option value="Water Bottle">Water Bottle</option>
+                        </select>
+                    </td>
+                    <td><input type="number" value="0" id="q4"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td><input type="button" class="button" value="Place Order" onclick="createBill()"></td>
+                    <!-- Clear button removed -->
+                </tr>
+            </table>
+        </form>
+<div id="orderSummary">
+    <!-- Order summary will be displayed here -->
+</div>
+
+    </div>
+</body>
+</html>
